@@ -1,0 +1,293 @@
+body{
+	font:15px/1.5 Arial Black, Helvatica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color:black;
+}
+
+/* Global */
+.container{
+	width:60%;
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+	padding:0;
+	margin:0;
+}
+
+/* Header */
+header{
+	background:#35424a;
+	background-position:center;
+	color:white;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 3px solid;
+}
+
+header a{
+	text-decoration:none;
+	color:white;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header li{
+	display:inline;
+	float:left;
+	padding:0 20px 0 20px;	
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	font-family:Tahoma;
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight, header .current a{
+	color:#e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#ccc;
+	font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+	min-height:600px;
+	background:url('../images/showcase.jpg');
+	background-position:center;
+	text-align:center;
+	color:white;
+}
+
+#showcase h1{
+	font-family:Impact, sans-serif;
+	margin-top:180px;
+	font-size:60px;
+	margin-bottom:10px;
+	margin-left:10px;
+	letter-spacing:10px;
+}
+
+#showcase h4{
+	font-family: 'Pacifico', cursive;;
+	font-size:16px;
+	font-style:italic;
+}
+
+/* Biography */
+#main{
+	background:url('../images/biobg.jpg');
+	background-position:center;
+	color:black;
+}
+
+#main .page-title{
+	text-decoration:underline;
+}
+
+article#main-col{
+	width:80%;
+	border:3px solid grey;
+	padding:15px;
+	margin:auto;
+	margin-top:10px;
+}
+
+article#main-col h1{
+	text-align:center;
+}
+
+/* Boxes */
+#boxes{
+	margin-top:20px;
+	width:80%;
+	margin:auto;
+}
+
+#boxes .box1{
+	float:left;
+	text-align:center;
+	width:40%;
+	height:150px;
+	padding:5px;
+	margin:10px;
+	border:3px solid grey;
+}
+
+#boxes .box2{
+	float:right;
+	text-align:center;
+	width:40%;
+	height:150px;
+	padding:5px;
+	margin:10px;
+	border:3px solid grey;
+}
+
+#boxes .box2 img{
+	width:150px;
+}
+
+#boxes .box3{
+	float:left;
+	text-align:center;
+	width:40%;
+	height:150px;
+	padding:5px;
+	margin:10px;
+	border:3px solid grey;
+}
+
+#boxes .box4{
+	float:right;
+	text-align:center;
+	width:40%;
+	height:150px;
+	padding:5px;
+	margin:10px;
+	border:3px solid grey;
+}
+
+#boxes li{
+	list-style:none;
+}
+
+#boxes .box-title{
+	text-decoration:underline;
+}
+
+/* Coding */
+#coding{
+	background:url('../images/biobg.jpg');
+	background-position:center;
+	color:black;
+	text-align:center;
+	font-family:impact, sans-serif;
+	font-size:18px;
+}
+
+#coding .page-title{
+	font-size:40px;
+}
+
+#coding .box-title{
+	color:#e8491d;
+	text-decoration:underline;
+}
+
+.square{
+	margin:auto;
+	margin-bottom:20px;
+	width:80%;
+	height:500px;
+	border:3px solid grey;
+	position:relative;
+}
+
+.box1 #first{
+	float:left;
+	width:40%;
+	padding-left:60px;
+}
+
+.box1 #second{
+	float:right;
+	width:40%;
+	padding-right:60px;
+}
+
+.box2 #first{
+	float:left;
+	width:40%;
+	padding-left:60px;
+}
+
+.box2 #second{
+	float:right;
+	width:40%;
+	padding-right:60px;
+}
+
+.box3 #first{
+	float:left;
+	width:40%;
+	padding-left:60px;
+}
+
+.box3 #second{
+	float:right;
+	width:40%;
+	padding-right:60px;
+}
+
+.box4 #first{
+	float:left;
+	width:40%;
+	padding-left:60px;
+}
+
+.box4 #second{
+	float:right;
+	width:40%;
+	padding-right:60px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#main{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+
+	#boxes .box1,
+	#boxes .box2,
+	#boxes .box3,
+	#boxes .box4{
+		width:86%;
+	}
+
+	#coding .box1,
+	#coding .box2,
+	#coding .box3,
+	#coding .box4{
+		width:95%;
+	}
+
+	#coding img{
+		height:100px;
+		width:500px;
+		margin:auto;
+		margin-bottom:15px;
+	}
+
+	.square{
+		height:400px;
+	}
+
+	header{
+		padding-bottom:20px;
+	}
+
+	#showcase h1{
+    margin-top:40px;
+    font-size:55px;
+  }
+}
